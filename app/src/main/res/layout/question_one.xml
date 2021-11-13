@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="Microsoft Teams"
+        android:textColor="@color/primary"
+        android:textSize="40sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:src="@drawable/ic_microsoft_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="Get started with your work,School or\n personal Microsoft account."
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/abhaya_libre"
+        android:hint="Enter email, phone or skype"
+        app:boxCornerRadiusBottomEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
+        app:boxStrokeWidth="0dp"
+
+        app:boxStrokeWidthFocused="0dp"
+        app:hintTextColor="@color/black_40">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:backgroundTint="@color/primary"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        app:cornerRadius="@dimen/box_corner_radius" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="Get help with signing in"
+        android:textColor="@color/primary"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:backgroundTint="@color/background"
+        android:text="Join a meeting"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:textSize="16sp"
+        app:cornerRadius="@dimen/box_corner_radius"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="1dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/background"
+
+        android:text="Sign up for free"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:textSize="16sp"
+        app:cornerRadius="@dimen/box_corner_radius"
+        app:icon="@drawable/ic_microsoft_logo"
+        app:iconGravity="textStart"
+        app:iconSize="24dp"
+        app:iconTint="@null"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="1dp" />
+
+
+</LinearLayout>
